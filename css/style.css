@@ -10,3 +10,102 @@
 #github-icon:hover ~ #onhoverfb{
     visibility: visible;
 }
+
+.text_1 {
+    color: #66fcf1;
+    animation: text1;
+  }
+  
+  .text_2 {
+    color: #66fcf1;
+    animation: text2;
+  }
+  
+  .text_1, .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 15s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+  }
+  
+  .text_1::after, .text_2::after {
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 20s;
+    animation-timing-function: steps(1, end);
+  }
+  
+  @keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 10.5em;
+    }
+  }
+  
+  @keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 10em;
+    }
+  }
+  
+  #scrolldown {
+    position: relative;
+  }
+
+  #scrolldown span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    transform: rotate(-45deg);
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+  }
+  #scrolldown span:nth-of-type(1) {
+    animation-delay: 0s;
+  }
+  #scrolldown span:nth-of-type(2) {
+    top: 16px;
+    animation-delay: .15s;
+  }
+  #scrolldown span:nth-of-type(3) {
+    top: 32px;
+    animation-delay: .3s;
+  }
+  @-webkit-keyframes sdb07 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb07 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
