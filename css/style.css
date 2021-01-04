@@ -26,18 +26,18 @@
     white-space: nowrap;
     display: inline-block;
     position: relative;
-    animation-duration: 15s;
+    animation-duration: 10s;
     animation-timing-function: steps(25, end);
     animation-iteration-count: infinite;
   }
   
-  .text_1::after, .text_2::after {
+  /* .text_1::after, .text_2::after {
     position: absolute;
     right: 0;
     animation: caret infinite;
-    animation-duration: 20s;
+    animation-duration: 10s;
     animation-timing-function: steps(1, end);
-  }
+  } */
   
   @keyframes text2 {
     0%, 50%, 100% {
@@ -109,3 +109,24 @@
       opacity: 0;
     }
   }
+
+.fade-right {
+    position: relative;
+    overflow: hidden;
+}
+
+#slide-left {
+  position: absolute;
+  left: -370px;
+  width: 370px;
+  animation: slideleft 0.5s forwards;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes slideleft {
+  100% { left: 0; }
+}
+
+@keyframes slideleft {
+  100% { left: 0; }
+}
