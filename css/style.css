@@ -110,26 +110,6 @@
     }
   }
 
-.fade-right {
-    position: relative;
-    overflow: hidden;
-}
-
-#slide-left {
-  position: absolute;
-  left: -370px;
-  width: 370px;
-  animation: slideleft 0.5s forwards;
-  animation-delay: 1s;
-}
-
-@-webkit-keyframes slideleft {
-  100% { left: 0; }
-}
-
-@keyframes slideleft {
-  100% { left: 0; }
-}
 .card{
   width: 16rem;
   padding: 20px;
@@ -147,4 +127,11 @@
 .image-style{
   width: 40px;
   height: 40px;
+}
+
+.about-card{
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0px 0px 5px #c9c9c9;
 }
