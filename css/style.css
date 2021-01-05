@@ -31,14 +31,6 @@
     animation-iteration-count: infinite;
   }
   
-  /* .text_1::after, .text_2::after {
-    position: absolute;
-    right: 0;
-    animation: caret infinite;
-    animation-duration: 10s;
-    animation-timing-function: steps(1, end);
-  } */
-  
   @keyframes text2 {
     0%, 50%, 100% {
       width: 0;
@@ -121,7 +113,6 @@
 .carddeck{
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 
 .image-style{
@@ -134,4 +125,7 @@
   background-color: #fff;
   border: 1px solid #dbdbdb;
   box-shadow: 0px 0px 5px #c9c9c9;
+}
+.card-title{
+  text-align: center;
 }
